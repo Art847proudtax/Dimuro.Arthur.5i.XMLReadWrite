@@ -1,0 +1,25 @@
+﻿@model List<Persona>
+@{
+    ViewBag.Title = "Index";
+}
+
+
+
+
+<h2>Index</h2>
+
+<table class="table table-bordered">
+    @foreach (Persona m in Model)
+    {
+
+        <tr>
+            <td>@m.Nome</td>
+            <td>@m.Cognome</td>
+            <td>@m.Telefono</td>
+            <td>@m.Indirizzo</td>
+        </tr>
+
+
+
+    }
+</table>
